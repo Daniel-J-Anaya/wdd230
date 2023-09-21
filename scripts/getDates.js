@@ -12,12 +12,10 @@ function populateYear() {
 
 populateYear();
 
-function lastModified() {
-  const modificationReport = "Last Modification: 9/19/2023 9:30:00";
+let lastModified = document.lastModified
 
-  let popLastModified = document.getElementById("lastModified");
+let lastModifiedElement = document.querySelector('#lastModified');
 
-  popLastModified.innerHTML = modificationReport;
+if (lastModified) {
+  lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
 }
-
-lastModified();
