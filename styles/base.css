@@ -1,5 +1,6 @@
 :root {
     --primary-color: #7DA2A9;
+    --background-color: #3D595C;
     --secondary-color: #F7F7F7;
     --font-color: #000000;
     --header-font: 'Stick no Bills', sans-serif;
@@ -44,6 +45,7 @@ header {
     justify-content: center;
     padding: 20px;
     border: 1px solid rgba(0,0,0,0.1);
+    min-width: 304px;
 }
 
 h1 {
@@ -51,16 +53,23 @@ h1 {
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     margin: 0 auto;
     max-width: 800px;
 }
 
-nav ul {
-    list-style-type: none;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: var(--secondary-color);
 }
 
-nav a {
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
     display: block;
     color: var(--secondary-color);
     text-align: center;
@@ -68,12 +77,12 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.navigation li a:hover {
     background-color:  var(--font-color);
 }
 
 .active {
-    color: #FFAD5B;
+    color: #FFD294;
 }
 
 main {
@@ -129,7 +138,7 @@ main {
 
 footer {
     color: var(--secondary-color);
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     margin-top: 20px;
     text-align: center;
     position: fixed;
@@ -145,7 +154,7 @@ footer span {
 }
 
 #lastModified {
-    color: #373F51;
+    color: #FFD294;
     margin: 50px;
 }
 
@@ -155,4 +164,48 @@ footer span {
 
 #information p {
     margin: 15px 0;
+}
+
+
+/* hamburger menu */
+#menu {
+	font-size: 1.5rem;
+	border: none;
+	padding: 6px 7px 1px;
+	background-color: var(--background-color);
+	color: var(--secondary-color);
+ 	position: absolute;
+	top: 97px;
+    right: 45%;
+
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+
+/* dark mode */
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
 }

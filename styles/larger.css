@@ -13,12 +13,17 @@
         justify-content: left;
     }
 
-    nav ul {
-        display: flex;
+    .navigation {
+        flex-direction: row;
     }
 
-    nav ul li {
+    .navigation li {
+        display: block;
         flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
     }
 
     .container {
