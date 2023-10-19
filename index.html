@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="mode">Dark Mode</div>
-        <img src="images/danielAnaya-portrait.jpg" alt="portrait photo of Daniel Anaya">
+        <img src="images/danielAnaya-portrait.webp" alt="portrait photo of Daniel Anaya">
         <h1 id="name">Daniel Anaya</h1>
     </header>
     <nav>
@@ -35,6 +35,13 @@
         </ul>
     </nav>
     <main class="container">
+        <picture class="hero-image">
+            <source srcset="images/losAngelesTemples.webp" media="(min-width: 640px)"/>
+            <img src="images/losAngelesTemplePortrait.webp" alt="The Los Angeles Temple"/>
+        </picture>
+        <div class="heroLabel">
+            <p>Los Angeles Temple</p>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card" id="learningActivities">
             <h3>Learning Activities</h3>
@@ -51,8 +58,9 @@
             <h3>Information</h3>
             <p>Rexburg, ID</p>
             <p>76F - Sunny</p>
-            <p>Page Visits: 2</p>
+            <p>Page Visits: <br><span class="visits"></span></p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19107.12331388818!2d-118.01449820905692!3d33.941330438182874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697747091394!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <span id="year"></span> &bull; Daniel Anaya US
@@ -63,5 +71,6 @@
     <script src="scripts\getDates.js"></script>
     <script src="scripts\menu.js"></script>
     <script src="scripts\darkMode.js"></script>
+    <script src="scripts\visits.js"></script>
 </body>
 </html>

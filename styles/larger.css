@@ -34,10 +34,22 @@
         grid-column: 1 / 5;
     }
 
+    .hero-image img {
+        max-width: 960px;
+    }
+
+    .heroLabel {
+        grid-column: 2 / 3;
+    }
+
     .card {
         justify-self: left;
         width: 90%;
         margin: 0 20px;
+    }
+
+    iframe {
+        width: 600px;
     }
 
     #learningActivities {
