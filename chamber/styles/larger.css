@@ -1,0 +1,35 @@
+@media (min-width: 839px) {
+
+  header {
+      max-width: none;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  header h1 {
+    min-width: 537px;
+    margin-left: 100px;
+  }
+
+  nav {
+      max-width: none;
+  }
+
+  .navigation {
+      flex-direction: row;
+  }
+
+  .navigation li {
+      display: block;
+      flex: 1 1 100%;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #heroImage {
+    top: 10.5rem;
+  }
+
+}

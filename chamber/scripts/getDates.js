@@ -9,3 +9,13 @@ function populateYear() {
 
   popYear.innerHTML = content;
 }
+
+populateYear();
+
+let lastModified = document.lastModified
+
+let lastModifiedElement = document.querySelector('#lastModified');
+
+if (lastModified) {
+  lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+}

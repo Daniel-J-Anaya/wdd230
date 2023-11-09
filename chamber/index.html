@@ -4,24 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whittier Chamber of Commerce</title>
-    <meta>
-    <meta>
+    <meta name="author" content="Daniel Anaya">
+    <meta name="description" content="The home page fo the Whittier Chamber of Commerce Website">
+    <meta property="og:title" content="Daniel Anaya - WDD 230 - Web Frontend Development - Whittier Chamber of Commerce">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="#">
+    <link rel="icon" href="images/wacc-fav.jpg">
 </head>
 <body>
-    <header></header>
-    <nav></nav>
+    <header>
+        <img src="images/wacc-logo.png" alt="Whittier Chamber of Commerce Logo">
+        <h1 class="title">Whittier Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" atr="menu button"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Directory</a></li>
+        </ul>
+    </nav>
     <main>
-        <img src="#" alt="" id="heroImage">
-        <div id="callToAction"></div>
-        <div id="currentEvents"></div>
-        <section id="weatherCard"></section>
-        <section id="companySpotlights"></section>
+        <img src="https://wisehomesolutions.com/wp-content/uploads/2019/05/whittier-ca.jpeg" alt="Whittier CA Main Street" id="heroImage">
+        <div id="welcome">
+            <h1>Welcome to the Whittier Chamber of Commerce!</h1>
+        </div>
+        <div id="callToAction">
+            <a href="#">Join Now!</a>
+        </div>
+        <section id="currentEvents">
+            <h2>Commerce Events</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="images/event1.jpg" alt="">
+                    <h4>Event 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique enim aliquid a atque consequuntur cumque, ad molestiae itaque quia quibusdam. Quas eos sit in aspernatur fugiat. Id quam saepe a.</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="images/event2.jpg" alt="">
+                    <h4>Event 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magni sed incidunt cumque quisquam dolore impedit earum illo, veritatis obcaecati quas doloribus fugiat quibusdam odit et expedita placeat officiis iste!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section id="weatherCard">
+            <div class="card">
+                <h2>Whittier</h2>
+                <h3>Cloudy<span>Wind 10mi/h <span class="dot">•</span> Precip 0%</span></h3>
+                <h1>73°</h1>
+                <div class="sky">
+                    <div class="sun"></div>
+                    <div class="cloud">
+                        <div class="circle-small"></div>
+                        <div class="circle-tall"></div>
+                        <div class="circle-medium"></div>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td>TUE</td>
+                        <td>WED</td>
+                        <td>THU</td>
+                        <td>FRI</td>
+                        <td>SAT</td>
+                    </tr>
+                    <tr>
+                        <td>70°</td>
+                        <td>74°</td>
+                        <td>76°</td>
+                        <td>74°</td>
+                        <td>77°</td>
+                    </tr>
+                    <tr>
+                        <td>57°</td>
+                        <td>52°</td>
+                        <td>59°</td>
+                        <td>53°</td>
+                        <td>59°</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="companySpotlights">
+            <div class="banner">
+                <img src="https://storage.googleapis.com/website-production/uploads/2023/01/new-yorker-banner-ad-.png" alt="">
+                </div>
+            </div> 
+        </section>
+        <div class="clear"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <span id="year"></span> &bull; Daniel Anaya US &bull; Not Official | Project for WDD 230
+        <br>
+        <br>
+        <span id="lastModified"></span>
+    </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
