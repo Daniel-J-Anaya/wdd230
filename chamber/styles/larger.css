@@ -32,4 +32,50 @@
     top: 10.5rem;
   }
 
+  /* --------------------- DISCOVER PAGE ----------------------- */
+
+  .discover {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .discover h3 {
+    margin-top: 30px;
+    grid-column: 2 / 5;
+  }
+
+  /* ----------------- SIDE BAR ----------------- */
+
+  .sidebar {
+    grid-column: 1 / 3;
+  }
+
+  /* ------------- Calendar ------------- */
+
+  .week-days {
+    font-size: 12px;
+  }
+
+  /* ---------------- GALLERY ----------------- */
+
+  .gallery {
+    grid-column: 3 / 6;
+  }
+}
+
+@media (min-width: 1170px) {
+
+  /* ------------ CALENDAR ----------- */
+  .current-date h1 {
+    font-size: 1.4em;
+  }
+
+  .week-days {
+    font-size: 16px;
+  }
+
+  .weeks {
+    font-size: 16px;
+  }
 }

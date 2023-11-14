@@ -1,0 +1,1 @@
+const visitorMessage = document.querySelector('#visitorMessage');
