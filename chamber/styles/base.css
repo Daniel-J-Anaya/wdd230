@@ -5,6 +5,14 @@
   --font-color: #000000;
   --header-font: 'Stick no Bills', sans-serif;
   --paragraph-font: 'Josefin Sans', sans-serif;
+  --back: black;
+  --back2: #302F37;
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: white;
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
 }
 
 * {
@@ -295,11 +303,11 @@ main {
   margin-left: 0;
 }
 
-.dot {
+#weatherCard .dot {
   font-size: .9em;
 }
 
-.sky {
+#weatherCard .sky {
   position: relative;
   margin-top: 108px;
   width: 100px;
@@ -309,7 +317,7 @@ main {
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
 }
 
-.sun {
+#weatherCard .sun {
   position: relative;
   top: -3px;
   width: 55px;
@@ -319,28 +327,28 @@ main {
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .5s;
 }
 
-.cloud {
+#weatherCard .cloud {
   position: absolute;
   top: 60px;
   left: 30px;
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
 }
 
-.cloud:before,
+#weatherCard .cloud:before,
 .cloud:after {
   position: absolute;
   display: block;
   content: "";
 }
 
-.cloud:before {
+#weatherCard .cloud:before {
   margin-left: -10px;
   width: 51px;
   height: 18px;
   background: #fff;
 }
 
-.cloud:after {
+#weatherCard .cloud:after {
   position: absolute;
   top: -10px;
   left: -22px;
@@ -351,46 +359,46 @@ main {
   box-shadow: 50px -6px 0 6px #fff, 25px -19px 0 10px #fff;
 }
 
-table {
+#weatherCard table {
   position: relative;
   top: 10px;
   width: 100%;
   text-align: center;
 }
 
-tr:nth-child(1) td:nth-child(1),
-tr:nth-child(1) td:nth-child(2),
-tr:nth-child(1) td:nth-child(3),
-tr:nth-child(1) td:nth-child(4),
-tr:nth-child(1) td:nth-child(5) {
+#weatherCard tr:nth-child(1) td:nth-child(1),
+#weatherCard tr:nth-child(1) td:nth-child(2),
+#weatherCard tr:nth-child(1) td:nth-child(3),
+#weatherCard tr:nth-child(1) td:nth-child(4),
+#weatherCard tr:nth-child(1) td:nth-child(5) {
   padding-bottom: 32px;
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
 }
 
-tr:nth-child(2) td:nth-child(1),
-tr:nth-child(2) td:nth-child(2),
-tr:nth-child(2) td:nth-child(3),
-tr:nth-child(2) td:nth-child(4),
-tr:nth-child(2) td:nth-child(5) {
+#weatherCard tr:nth-child(2) td:nth-child(1),
+#weatherCard tr:nth-child(2) td:nth-child(2),
+#weatherCard tr:nth-child(2) td:nth-child(3),
+#weatherCard tr:nth-child(2) td:nth-child(4),
+#weatherCard tr:nth-child(2) td:nth-child(5) {
   padding-bottom: 7px;
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
 }
 
-tr:nth-child(3) td:nth-child(1),
-tr:nth-child(3) td:nth-child(2),
-tr:nth-child(3) td:nth-child(3),
-tr:nth-child(3) td:nth-child(4),
-tr:nth-child(3) td:nth-child(5) {
+#weatherCard tr:nth-child(3) td:nth-child(1),
+#weatherCard tr:nth-child(3) td:nth-child(2),
+#weatherCard tr:nth-child(3) td:nth-child(3),
+#weatherCard tr:nth-child(3) td:nth-child(4),
+#weatherCard tr:nth-child(3) td:nth-child(5) {
   padding-bottom: 7px;
   -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
 }
 
-tr:nth-child(2),
-tr:nth-child(3) {
+#weatherCard tr:nth-child(2),
+#weatherCard tr:nth-child(3) {
   font-size: .9em;
 }
 
-tr:nth-child(3) {
+#weatherCard tr:nth-child(3) {
   color: #999;
 }
 
@@ -734,3 +742,144 @@ footer span {
   box-shadow: none;
   transition: .5s;
 }
+
+/* --------------------------- FORM --------------------------- */
+
+#join {
+  margin-bottom: 90px;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  text-align: left;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input[type="radio"] {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+/* ------------------------ BENEFITS --------------------------- */
+
+.benefits {
+  width: 80%;
+}
+
+.benefits table {
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+  margin: 0 20px;
+}
+
+/* .benefits caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+} */
+
+.benefits tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+  padding: 15px 100px;
+}
+
+.benefits th {
+	padding: 15px;
+	border-left: 1px solid var(--borderlight);
+}
+
+.benefits th {
+	background-color: var(--back2);
+  color: var(--forelight);
+	font-size: 16px;
+}
+
+.benefits td {
+	text-align: center;
+  padding: 5px;
+  border: 1px solid var(--borderlight);
+}
+
+.benefits tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+.benefits .empty {
+  background-color: var(--back);
+}
+
+
+/* ---------------------- THANK YOU ----------------------- */
+
+#thankYou {
+  text-align: center;
+  margin: 100px auto;
+  padding: 10px 0 30px;
+  background-color: var(--background-color);
+  color: white;
+  width: 40%;
+  border-radius: 15px;
+  min-width: 350px;
+}
+
+#thankYou a {
+  color: orange;
+}
+

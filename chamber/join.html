@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whittier Chamber of Commerce</title>
+    <title>Whittier Chamber of Commerce | Join</title>
     <meta name="author" content="Daniel Anaya">
     <meta name="description" content="The home page fo the Whittier Chamber of Commerce Website">
     <meta property="og:title" content="Daniel Anaya - WDD 230 - Web Frontend Development - Whittier Chamber of Commerce">
@@ -28,6 +28,88 @@
         </ul>
     </nav>
     <main>
+        <section id="join">
+            <h1 class="formTitle">Whittier Chamber of Commerce: Membership Application</h1>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Title or Position <input type="text" name="title" pattern="[A-Za-z0-9 ] {7,20}"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="(123)-456-7890" required></label>
+                    <label class="top">Name of Organization* <input type="text" name="orgname" required></label>
+                    <label class="top">Organization Description <input type="text" name="orgdesc"></label>
+                    <label class="top"><input type="hidden" name="timestamp" id="timestamp"></label>
+                </fieldset>
+
+                <fieldset required>
+                    <legend>Membership Level</legend>
+                    <label class="sbs">NP Membership (non-profit)<input type="radio" name="membershiplevel" value="np membership"></label>
+                    <label class="sbs">Bronze Membership<input type="radio" name="membershiplevel" value="bronze membership"></label>
+                    <label class="sbs">Silver Membership<input type="radio" name="membershiplevel" value="silver membership"></label>
+                    <label class="sbs">Gold Membership<input type="radio" name="membershiplevel" value="gold membership"></label>
+                </fieldset>
+
+                <input class="submitBtn" type="submit" value="Submit Application">
+
+            </form>
+
+            <section class="benefits">
+                <table>
+                    <!-- <caption>Membership Benefits</caption> -->
+                    <thead>
+                      <tr>
+                        <th colspan="5" scope="colgroup">Membership Benefits</th>
+                      </tr>
+                      <tr>
+                        <th class="empty"></th>
+                        <th>Non-Profit</th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Advertising</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                      </tr>
+                      <tr>
+                        <td>Training</td>
+                        <td>&#10060</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                      </tr>
+                      <tr>
+                        <td>Event Discounts</td>
+                        <td>&#10060</td>
+                        <td>&#10060</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                      </tr>
+                      <tr>
+                        <td>Special Events</td>
+                        <td>&#10060</td>
+                        <td>&#10060</td>
+                        <td>&#10060</td>
+                        <td>✔️</td>
+                      </tr>
+                      <tr>
+                        <td>Spotlights</td>
+                        <td>&#10060</td>
+                        <td>&#10060</td>
+                        <td>&#10060</td>
+                        <td>✔️</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+        </section>
     </main>
     <footer>
         <span id="year"></span> &bull; Daniel Anaya US &bull; Not Official | Project for WDD 230
@@ -35,6 +117,7 @@
         <br>
         <span id="lastModified"></span>
     </footer>
+    <script src="scripts/timeStamp.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
