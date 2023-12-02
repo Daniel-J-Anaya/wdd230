@@ -883,3 +883,73 @@ form input.submitBtn {
   color: orange;
 }
 
+
+/* ------------------------------- DIRECTORY ------------------------------ */
+
+.directory {
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 80px;
+}
+
+.toggle {
+  text-align: center;
+}
+
+.toggle button {
+  margin: 20px;
+  padding: 10px;
+  background: var(--primary-color);
+  color: black;
+}
+
+.listToggle .bcard:nth-child(even) {
+  background-color: var(--primary-color);
+}
+
+.bcard {
+  padding: 2rem;
+  box-shadow: 0 0 10px var(--shadow);
+  transition: .4s ease-in;
+  text-align: center;
+  margin: 60px 0;
+  min-width: 350px;
+}
+
+.bcard:hover {
+  background: lightgrey;
+}
+
+.bcard p {
+  color: black;
+}
+
+.bcard img {
+  width: 150px;
+  height: auto;
+}
+
+.bcard .bname {
+  display: none;
+}
+
+.listToggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.listToggle .bcard {
+  margin: 0;
+  max-width: 100%;
+  box-shadow: none;
+
+}
+
+.listToggle .bcard img {
+  display: none;
+}
+
+.listToggle .bcard .bname {
+  display: inherit;
+}

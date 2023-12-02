@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+    "id":"1",
+    "name":"The Wishing Well",
+    "address":"6723 Greenleaf Ave. Whittier, CA 90601",
+    "number":"(562) 464-9474",
+    "url":"www.thewishingwellshop.com",
+    "img":"images/the-wishing-well.png",
+    "mbrlevel":"bronze"
+    },
+    {
+      "id":"2",
+      "name":"Little Shed",
+      "address":"6742 Bright Ave. Whittier, CA 90601",
+      "number":"(323) 875-8472",
+      "url":"littleshedinuptown.com",
+      "img":"images/little-shed.png",
+      "mbrlevel":"bronze"
+    },
+    {
+      "id":"3",
+      "name":"Cloud-CPA Whittier",
+      "address":"14831 WhittierBlvd. Whittier, CA 90605",
+      "number":"(855) 487-9700",
+      "url":"cloud-cpa.com",
+      "img":"images/cloud-cpa.png",
+      "mbrlevel":"silver"
+    },
+    {
+      "id":"4",
+      "name":"Two Felons Skate Shop",
+      "address":"14125 Lambert Rd. Whittier, CA 90605",
+      "number":"(562) 698-8199",
+      "url":"twofelons.com",
+      "img":"images/two-felons.png",
+      "mbrlevel":"silver"
+    },
+    {
+      "id":"5",
+      "name":"Cerda Munoz Advisors",
+      "address":"7720 Painter Ave. Whittier, CA",
+      "number":"(562) 222-4525",
+      "url":"cerdamunoz.com",
+      "img":"images/cerda-munoz.png",
+      "mbrlevel":"gold"
+    },
+    {
+      "id":"6",
+      "name":"Platinum Web Design Agency",
+      "address":"1262 Anders Ave, Whittier, CA 90605",
+      "number":"(424) 332-4442",
+      "url":"platinumdesignagency.com",
+      "img":"images/platinum-web-design.png",
+      "mbrlevel":"gold"
+    },
+    {
+      "id":"7",  
+      "name":"Disabled American Veterans California",
+      "address":"15930 Lambert Rd, Whittier CA 90604",
+      "number":"(562) 652-0796",
+      "url":"nrd.gov",
+      "img":"images/davc.png",
+      "mbrlevel":"nonprof"
+    }
+  ]
+
+}
